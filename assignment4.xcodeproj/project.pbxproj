@@ -14,6 +14,14 @@
 		DD7FA0E91C7FFBE300B0357B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD7FA0E71C7FFBE300B0357B /* LaunchScreen.storyboard */; };
 		DD7FA0F41C7FFBE300B0357B /* assignment4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FA0F31C7FFBE300B0357B /* assignment4Tests.swift */; };
 		DD7FA0FF1C7FFBE300B0357B /* assignment4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FA0FE1C7FFBE300B0357B /* assignment4UITests.swift */; };
+		DD7FA10D1C817A5C00B0357B /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FA10C1C817A5C00B0357B /* ComposeViewController.swift */; };
+		DD7FA10F1C817A6C00B0357B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FA10E1C817A6C00B0357B /* HomeViewController.swift */; };
+		DD7FA1111C817A7A00B0357B /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FA1101C817A7A00B0357B /* TabViewController.swift */; };
+		DD7FA1131C817A8C00B0357B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FA1121C817A8C00B0357B /* SearchViewController.swift */; };
+		DD7FA1151C817A9A00B0357B /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FA1141C817A9A00B0357B /* AccountViewController.swift */; };
+		DD7FA1171C817AA400B0357B /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FA1161C817AA400B0357B /* TrendingViewController.swift */; };
+		DD7FA11B1C82CF8600B0357B /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FA1191C82CF8600B0357B /* BaseTransition.swift */; };
+		DD7FA11C1C82CF8600B0357B /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FA11A1C82CF8600B0357B /* FadeTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		DD7FA0FA1C7FFBE300B0357B /* assignment4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = assignment4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD7FA0FE1C7FFBE300B0357B /* assignment4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = assignment4UITests.swift; sourceTree = "<group>"; };
 		DD7FA1001C7FFBE300B0357B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD7FA10C1C817A5C00B0357B /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
+		DD7FA10E1C817A6C00B0357B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DD7FA1101C817A7A00B0357B /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		DD7FA1121C817A8C00B0357B /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DD7FA1141C817A9A00B0357B /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		DD7FA1161C817AA400B0357B /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		DD7FA1191C82CF8600B0357B /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		DD7FA11A1C82CF8600B0357B /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +115,10 @@
 			children = (
 				DD7FA0DE1C7FFBE300B0357B /* AppDelegate.swift */,
 				DD7FA0E01C7FFBE300B0357B /* ViewController.swift */,
+				DD7FA1191C82CF8600B0357B /* BaseTransition.swift */,
+				DD7FA11A1C82CF8600B0357B /* FadeTransition.swift */,
 				DD7FA0E21C7FFBE300B0357B /* Main.storyboard */,
+				DD7FA1181C817AC800B0357B /* View Controllers */,
 				DD7FA0E51C7FFBE300B0357B /* Assets.xcassets */,
 				DD7FA0E71C7FFBE300B0357B /* LaunchScreen.storyboard */,
 				DD7FA0EA1C7FFBE300B0357B /* Info.plist */,
@@ -123,6 +142,19 @@
 				DD7FA1001C7FFBE300B0357B /* Info.plist */,
 			);
 			path = assignment4UITests;
+			sourceTree = "<group>";
+		};
+		DD7FA1181C817AC800B0357B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD7FA10C1C817A5C00B0357B /* ComposeViewController.swift */,
+				DD7FA10E1C817A6C00B0357B /* HomeViewController.swift */,
+				DD7FA1101C817A7A00B0357B /* TabViewController.swift */,
+				DD7FA1121C817A8C00B0357B /* SearchViewController.swift */,
+				DD7FA1141C817A9A00B0357B /* AccountViewController.swift */,
+				DD7FA1161C817AA400B0357B /* TrendingViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +288,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD7FA1131C817A8C00B0357B /* SearchViewController.swift in Sources */,
+				DD7FA1171C817AA400B0357B /* TrendingViewController.swift in Sources */,
+				DD7FA10D1C817A5C00B0357B /* ComposeViewController.swift in Sources */,
+				DD7FA1151C817A9A00B0357B /* AccountViewController.swift in Sources */,
+				DD7FA11B1C82CF8600B0357B /* BaseTransition.swift in Sources */,
 				DD7FA0E11C7FFBE300B0357B /* ViewController.swift in Sources */,
+				DD7FA11C1C82CF8600B0357B /* FadeTransition.swift in Sources */,
 				DD7FA0DF1C7FFBE300B0357B /* AppDelegate.swift in Sources */,
+				DD7FA1111C817A7A00B0357B /* TabViewController.swift in Sources */,
+				DD7FA10F1C817A6C00B0357B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
