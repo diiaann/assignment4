@@ -21,7 +21,7 @@ class ComposeViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         for icon in icons {
             
-            UIView.animateWithDuration(0.6, delay: NSTimeInterval(drand48()), options: [], animations: { () -> Void in
+            UIView.animateWithDuration(0.6, delay: NSTimeInterval(drand48()/3), options: [], animations: { () -> Void in
                 icon.center = CGPoint (x: icon.center.x, y: icon.center.y - 480)
                 }, completion: { (Bool) -> Void in
             })
@@ -37,12 +37,25 @@ class ComposeViewController: UIViewController {
         }
 
     }
+    
+    override func viewWillDisappear(animated: Bool) {
+        for icon in icons {
+            
+            UIView.animateWithDuration(0.6, delay: NSTimeInterval(drand48()/3), options: [], animations: { () -> Void in
+                icon.center = CGPoint (x: icon.center.x, y: icon.center.y - 480)
+                }, completion: { (Bool) -> Void in
+            })
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func didPressNevermind(sender: UIButton) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

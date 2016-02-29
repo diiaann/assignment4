@@ -21,6 +21,7 @@ class TabViewController: UIViewController {
     
     var selectedIndex: Int = 0
     @IBOutlet var buttons: [UIButton]!
+    @IBOutlet weak var bubbleImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,8 @@ class TabViewController: UIViewController {
         
         buttons[selectedIndex].selected = true
         didPressTab(buttons[selectedIndex])
+        
+        animateBubbleDown()
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,11 +45,35 @@ class TabViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func animateBubbleDown(){
+        UIView.animateWithDuration(0.8 ,animations: {
+            self.bubbleImageView.center = CGPoint(x: self.bubbleImageView.center.x, y: self.bubbleImageView.center.y + 5)
+            }, completion: { (Bool) -> Void in
+                self.animateBubbleUp()
+            })
+        
+    }
+    
+    func animateBubbleUp(){
+        UIView.animateWithDuration(0.8, animations: {
+            self.bubbleImageView.center = CGPoint(x: self.bubbleImageView.center.x, y: self.bubbleImageView.center.y - 5)
+            }, completion: { (Bool) -> Void in
+                self.animateBubbleDown()
+            })
+    }
+    
 
     @IBAction func didPressTab(sender: UIButton) {
         //store the old index and set the new one
         let previousIndex = selectedIndex
          selectedIndex = sender.tag
+        
+        if (selectedIndex == 1) {
+            bubbleImageView.hidden = true
+        }
+        if (previousIndex == 1) {
+            bubbleImageView.hidden = false
+        }
         
         //unselect old button, select new one
         buttons[previousIndex].selected = false
